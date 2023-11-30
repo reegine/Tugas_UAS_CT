@@ -8,3 +8,5 @@ def itungan(a) :
     return total
 
 print(itungan(2))
+
+print('halow')
