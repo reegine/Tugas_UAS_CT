@@ -10,3 +10,5 @@ def itungan(a) :
 print(itungan(2))
 
 print('halow')
+
+print('bambang')
