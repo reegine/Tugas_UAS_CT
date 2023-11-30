@@ -12,3 +12,5 @@ print(itungan(2))
 print('halow')
 
 print('bambang')
+
+print("yeet")
