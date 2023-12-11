@@ -1,10 +1,6 @@
 import os
 os.system('cls')
 import time
-import random
-from PIL import Image
-from colorit import init_colorit, background
-import urllib.request 
 
 def animate_text(text, color=None, italic=False):
     if color == 'green':
@@ -42,13 +38,12 @@ user_list_of_item = []
 user_monster_defeated = []
 i = "Cursed Bracelet"
 monster = Monster()
+
+
 #------------------------------------------------------------------Bagian Regine-------------------------------------------------------------------------------------------------------------------
 while True :
     os.system('cls' if os.name == 'nt' else 'clear')
-    animate_text("Welcome To '......' \n")
-    # urllib.request.urlretrieve('https://res.cloudinary.com/reginee/image/upload/v1611221307/samples/food/pot-mussels.jpg', "pot-mussels.jpg") 
-    # img = Image.open("pot-mussels.jpg") 
-    # img.show()
+    animate_text("Welcome To 'Dawn In The Tomb' \n")
     animate_text("In the heart of the Egyptian desert, a recently uncovered tomb beckons with the allure of ancient mysteries. \nThe newly discovered tomb looms before you, and your curiosity intensifies as you join a group of archeologists on this extraordinary expedition.\nThe group consists of college students, older archeologists, and a man who you notice seems out of place. You feel like that man keeps staring at you. \nFeeling quite uncomfortable, you ignore his stares. \nAs you and your group gathered near the entrance, a young man from the group, probably still a student, turned to you with curiosity.")
     animate_text("\n   [Young Man] : “Are you an archeology student too?” \x1B ", color='purple', italic= True)
     user_major = input("\033[92m \nInput Your Major: \n")
@@ -628,7 +623,7 @@ while True :
 
     #-------------------------------------------------Bagian Regine---------------------------------------------------------------------------------------------------------------------------------
     animate_text("\n\n======================================================================================================================================", color='green')
-    animate_text("\nCongradulation user_name!!\nYou Have Finished '.....'\n\nThese are your Accomplishments!!\nHere are the monsters that you have defeated!")
+    animate_text("\nCongradulation user_name!!\nYou Have Finished 'Dawn In The Tomb'\n\nThese are your Accomplishments!!\nHere are the monsters that you have defeated!")
     print(" ",user_monster_defeated)
     animate_text("\n\nAnd these are the items that you had collected")
     print(" ",user_list_of_item)
