@@ -27,7 +27,7 @@ def animate_text(text, color=None, italic=False):
 
     for char in text:
         print(f"{color_code}{italic_code}{char}\033[0m", end='', flush=True)  # Reset color and italic with '\033[0m'
-        # time.sleep(0.001)
+        time.sleep(0.005)
     print()
 
 
@@ -42,7 +42,7 @@ user_list_of_item = []
 user_monster_defeated = []
 i = "Cursed Bracelet"
 monster = Monster()
-
+#------------------------------------------------------------------Bagian Regine-------------------------------------------------------------------------------------------------------------------
 while True :
     os.system('cls' if os.name == 'nt' else 'clear')
     animate_text("Welcome To '......' \n")
@@ -51,15 +51,15 @@ while True :
     # img.show()
     animate_text("In the heart of the Egyptian desert, a recently uncovered tomb beckons with the allure of ancient mysteries. \nThe newly discovered tomb looms before you, and your curiosity intensifies as you join a group of archeologists on this extraordinary expedition.\nThe group consists of college students, older archeologists, and a man who you notice seems out of place. You feel like that man keeps staring at you. \nFeeling quite uncomfortable, you ignore his stares. \nAs you and your group gathered near the entrance, a young man from the group, probably still a student, turned to you with curiosity.")
     animate_text("\n   [Young Man] : “Are you an archeology student too?” \x1B ", color='purple', italic= True)
-    user_major = "SOFTWARE ENJINIR" #input("\033[92m \nInput Your Major: \n")
+    user_major = input("\033[92m \nInput Your Major: \n")
     animate_text("\nYou responded with a shake of your head\n")
     animate_text("   [You] : No, I'm a user_major student.", color='green', italic=True)
     animate_text("\n   [Young Man] : “really?” \x1B ", color='purple', italic= True)
-    animate_text("\nThe young man? responded in surprise.")
+    animate_text("\nThe young man responded in surprise.")
     animate_text("\n   [Young Man] : “Our team mainly consists of archeology majors. Why is a user_major major interested in this field?” \x1B ", color='purple', italic= True)
 
     animate_text("\n   Option A : I've always been interested in ancient tombs since I was a child. \n   Option B : I’m just here to observe and spend my holidays.", color='red', italic=True)
-    user_answer1 = 'a' #input("\033[92m \n   Input Your Answer (A/B): ")
+    user_answer1 =input("\033[92m \n   Input Your Answer (A/B): ")
 
     if user_answer1 == 'A' or user_answer1 == 'a' :
         animate_text("\n   [You] : I've always been interested in ancient tombs since I was a child.", color='green', italic=True)
@@ -81,7 +81,7 @@ while True :
     animate_text("\nFinally, the sound of people chattering could be heard. Feeling relief, you approach the group of archeologists- or so what you thought.\nIt turns out, you’ve met a group of tomb riders, digging through the fragile walls.")
 
     animate_text("\n   What would you do?\n     Option A : RUN\n     Option B : HIDE\n", color='red', italic=True)
-    user_answer2 = 'a' #input("\033[92m \n   Input Your Answer (A/B): ")
+    user_answer2 =input("\033[92m \n   Input Your Answer (A/B): ")
 
     if user_answer2 == "A" or user_answer2 == "a":
         animate_text("\n   [You] : You immediately turned and ran away from that place. Hearing your running steps, the tomb raider notices your presence.", color='green', italic=True)
@@ -102,13 +102,13 @@ while True :
 
     animate_text("\nHe extended his hand with a gentle smile on his face, ignoring the blood trickling down his cheek. The dissonance of his presence sends shivers throughout your entire body. ")
     animate_text("\n   What would you do?\n     Option A : Take His Hand\n     Option B : Ignore Him\n", color='red', italic=True)
-    user_answer3 = 'a' #input("\033[92m \n   Input Your Answer (A/B): ")
+    user_answer3 = input("\033[92m \n   Input Your Answer (A/B): ")
 
     if user_answer3 == "A" or user_answer3 == "a":
-        animate_text("You subconsciously took his hand to get up, and murmured a quiet ‘thank you’.", color='green', italic=True)
-        animate_text("The recent event hadn't entirely settled in your mind. However, looking at the dangerous man, you believe it’s best to go along with the situation for the time being.", color='green', italic=True)
+        animate_text("You subconsciously took his hand to get up, and murmured a quiet ‘thank you’.")
+        animate_text("The recent event hadn't entirely settled in your mind. However, looking at the dangerous man, you believe it’s best to go along with the situation for the time being.")
     else :
-        animate_text("You stared blankly at the person in front of you as shock still lingered inside you. When you regain your senses bit by bit, you push yourself up, avoiding the dangerous man's hand.", color='green', italic=True)
+        animate_text("\nYou stared blankly at the person in front of you as shock still lingered inside you. When you regain your senses bit by bit, you push yourself up, avoiding the dangerous man's hand.")
 
     animate_text("\n\n......\n\n")
 
@@ -118,12 +118,12 @@ while True :
     animate_text("The man beside you humm in amusement before he spoke, ")
     animate_text("\n   [???] : It looks like the blood that splattered on the rock activated a hidden mechanism- ", color='blue', italic= True)
 
-    animate_text("he cocked his head towards you")
+    animate_text("\nhe cocked his head towards you")
 
     animate_text("\n   [???] : Shall we head inside? ", color='blue', italic= True)
 
     animate_text("\n   What would you do?\n     Option A : Sure...\n     Option B : I think we should go and report to the police first…\n     Option C : I'd rather go home.", color='red', italic=True)
-    user_answer4 = 'c' #input("\033[92m \n   Input Your Answer (A/B/C): ")
+    user_answer4 = input("\033[92m \n   Input Your Answer (A/B/C): ")
 
     if user_answer4 == "A" or user_answer4 == "a":
         ()
@@ -160,7 +160,7 @@ while True :
 
 
     animate_text("\n   What would you do?\n     Option A : Accept the handkerchief\n     Option B : Decline\n     Option C : I think you need it more.", color='red', italic=True)
-    user_answer5 = 'c' #input("\033[92m \n   Input Your Answer (A/B/C): ")
+    user_answer5 =input("\033[92m \n   Input Your Answer (A/B/C): ")
 
     if user_answer5 == "A" or user_answer5 == "a":
         animate_text("You took the handkerchief and carefully wiped your face clean of blood. After folding it, you returned the handkerchief to its owner.")
@@ -179,16 +179,17 @@ while True :
     
     animate_text("\n\n......\n\n")
 
-    #---------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    #-----------------------------------------------------------Bagian Branden---------------------------------------------------------------------------------------------------------------------
 
     animate_text("You tried to hide your uncomfortable expression as he shoved the dirty cloth into his coat pocket. The two of you then walk side by side.")
     animate_text("During your walk together, he remarked, ")
     animate_text("\n   [???] : Considering we're in this together for the duration of this hidden path exploration, it wouldn't hurt to know each other's names, don’t you think? ", color='blue', italic= True)
     animate_text("\n  Would you tell your name? \n     OPTION A: My Name is... \n     OPTION B: You first", color='red', italic=True)
-    user_answer6 = 'b' #input("\033[92m \n   Input Your Answer (A/B): ")
+    user_answer6 = input("\033[92m \n   Input Your Answer (A/B): ")
 
     if user_answer6 == "A" or user_answer6 == "a":
-        user_name = 'Yoon Chan' #input("\033[92m \nInput Your Name: \n")
+        user_name = input("\033[92m \nInput Your Name: \n")
         animate_text("\n   [You] : My name is user_name,you answered him.", color='green', italic=True)
         animate_text("\nThat man smiled and called out to you,")
         animate_text("\n   [???] : user_name", color='blue', italic= True)
@@ -207,7 +208,7 @@ while True :
         animate_text("\n   [Leo] : Now that I've told you my name, you should tell me yours in exchange",color='green', italic=True)
         animate_text("\n What a laugh")
         animate_text("\n Looking at how he hesitated, he probably used a fake name. Nevertheless, you still told him your name.")
-        user_name = 'Yoon Chan' #input("\033[92m \nInput Your Name: \n")
+        user_name = input("\033[92m \nInput Your Name: \n")
         animate_text("\n   [You] : My name is user_name, you answered him.", color='green', italic=True)
         animate_text("\nThat man smiled and called out to you,")
         animate_text("\n   [???] : user_name", color='blue', italic= True)
@@ -216,14 +217,82 @@ while True :
         
     animate_text("\n\n......\n\n")
 
-    animate_text("\nThe hidden passageway's walls were adorned with an array of meticulously crafted carvings, each displaying a level of clarity and detail that surpassed those found in any other section of the tomb.\n   These intricate depictions seemed to unfold a narrative, offering not only artistic beauty but also potential clues about the occupant of the tomb. ")
+    animate_text("\nThe hidden passageway's walls were adorned with an array of meticulously crafted carvings, each displaying a level of clarity and detail that surpassed those found in any other section of the tomb.\nThese intricate depictions seemed to unfold a narrative, offering not only artistic beauty but also potential clues about the occupant of the tomb. ")
     animate_text("Leo seems to notice your focused gaze on the incrate walls.")
     animate_text("\nHe followed your gaze on the incrate wall")
     animate_text("\n    [Leo]: Do you know what these cravings tell ",color='blue', italic= True)
     animate_text("\nYou ponder the carvings for a moment before answering the man's question")
-    animate_text("\n   [You] : These carvings seem to mostly depict the Ennead, the nine deities of ancient mythology, \n           it looks like it tells the about the great war between one of Ennead deities, Seth and his nephew, Horus, \n          judgjing by how frequently those heads and set heads symbols show up in the carvings", color='green', italic=True)
+    animate_text("\n   [user_name] : These carvings seem to mostly depict the Ennead, the nine deities of ancient mythology, \n           it looks like it tells the about the great war between one of Ennead deities, Seth and his nephew, Horus, \n          judgjing by how frequently those heads and set heads symbols show up in the carvings", color='green', italic=True)
 
-    #---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    #---------------------------------------------------------Bagian Gerald-------------------------------------------------------------------------------------------------------------------------
+
+    animate_text("\nClear amusement could be seen in Leo's eyes." )
+    animate_text("\n   [Leo] : You really know a lot about these things as a user_major student.", color='blue', italic=True)
+    animate_text("\n   [user_name] : ...", color='green', italic=True)
+    animate_text("\nYou're pretty sure you haven't told him your major.")
+    animate_text("\n  What will you do? \n     OPTION A: Confront him \n     OPTION B: Let it pass", color='red', italic=True)
+    user_answer7 = input("\033[92m \n   Input Your Answer (A/B): ")
+
+    if user_answer7 == 'A' or user_answer7 == 'a':
+        animate_text("\n   [user_name] : How do you know I'm a user_major student?", color='green', italic=True)
+        animate_text("\nLeo just laughed and ignored your question as he stepped ahead and pointed at another carving.")
+    elif user_answer7 == 'B' or user_answer7 == 'b':
+        animate_text("\nYou looked at the man who now stepped ahead and pointed at other carvings.")
+        animate_text("\n   [Leo] : How about this one?", color='blue', italic=True)
+        animate_text("\nHe looked back at you, still wearing his typical smile, and asked.")
+        animate_text("\n   [Leo] :Do you know what this means?", color='blue', italic=True)
+        animate_text("\nAs you look where Leo is pointing, you notice carvings that resemble ancient Egyptian writing.")
+        animate_text("\n   [user_name] : I don't know.", color='green', italic=True)
+        animate_text("\nYou said while shaking your head.")
+        animate_text("\n   [user_name] :I don't understand ancient language.",color='green', italic=True)
+        
+        animate_text("\nLeo's smile widened, an unsettling glint in his eyes.")
+        animate_text("\n   [Leo] : Well...This means those who are asleep will be awakened.", color='blue', italic=True)
+        
+        animate_text("\nBefore you could ask what Leo meant, the entire tomb began to quake. The ground beneath you trembled, and the carvings on the walls seemed to pulsate with an otherworldly energy.")
+        animate_text("Suddenly, from the shadows emerged a monstrous entity, a grotesque fusion of ancient and otherworldly elements. \nIts form defied earthly logic, limbs contorted in unnatural angles, and its eyes glowed with an eerie luminescence.")
+
+    animate_text("\nThe monster's mere presence exuded an aura of malevolence that sent shivers down your spine.")
+    animate_text("\n   [user_name] : This one who is asleep is... a monster?", color='green', italic=True)
+
+    animate_text("\nAmid the chaos, Leo reached into his coat, revealing a sleek gun. With a practiced motion, he aimed the weapon at the approaching monster.")
+
+    animate_text("He has a gun this whole time??? Would that even work on this kind of monster?")
+
+    animate_text("Leo skillfully fired an arrow at the monster, causing noticeable damage. However, the monster reacts by splitting into two distinct entities. One locks its gaze on you, swiftly lunging in your direction,")
+
+    animate_text("\n   [user_name]: 'Sh*t'", color='green', italic=True)
+
+    animate_text("\n  The monstrous creature raises its enormous hand, preparing to strike you.", color='red', italic=True)
+
+    dodge = input("   Press 'D' to dodge : ")
+
+    if dodge == 'D' or dodge == 'd':
+        animate_text("\nYou successfully evade the attack, initiating a tense chase with the relentless monster.")
+        animate_text("\n   [Leo] : user_name!", color='blue', italic=True)
+        animate_text("\nYou turn your attention to the person calling you. ")
+        animate_text("\n   [Leo] : CATCH!!",color='blue', italic=True) 
+        animate_text("\nLeo shouts as he throws something in your direction.")
+        animate_text("\n  You react quickly, catching the item and examining it closely. It's a dagger, the same one Leo used to kill the Tomb Raiders earlier. \n  Traces of blood still adorn the gleaming blade. Now you have a weapon in your hand, you can attack the monster in front of you!", color='red', italic=True)
+        
+        catch = input("\n  Write 'Attack' to attack :  ")
+
+        if catch == 'Attack' or catch == 'attack':
+            user_monster_defeated.append('Monster')
+            animate_text("\nThe remnants of the defeated monster crumbled into dust, and a sigh of relief escaped your lips.")
+            animate_text("However, as the eerie silence settled in the tomb, a realization dawned upon you-Leo was nowhere to be seen.")
+        else:
+            animate_text("\nYou hesitated and the monster seized the opportunity, striking you with its monstrous force.")
+            animate_text("Everything went dark...")
+            animate_text("\nYou Died", color='red')
+    else:
+        animate_text("\nYou failed to dodge in time, and the monstrous creature's hand struck you with overwhelming force.")
+        animate_text("Everything went dark...")
+        animate_text("\nYou Died", color='red')
+
+
+    #--------------------------------------------------------Bagian Regine-----------------------------------------------------------------------------------------------------------------------
 
     animate_text("You walk further into the tomb, now alone. The longer you walk, the more you realize that this hallway is very quiet. \nIt doesn't feel as scary when you walk with Leo. The fear and uncertainty you felt with the lunatic are now replaced by a new kind of unease. \nYou wonder if it's better or worse not to have him by your side on this silent journey.")
     animate_text("\nYour steps stop when the tunnel branches to the west and east. \nSeeing a branching road, you pay attention to the walls to look for clues that might lead you out of this tomb. \nYour eyes catch an inscription on the side of the wall, but it is written in ancient Egyptian.")
@@ -241,7 +310,7 @@ while True :
 
         while monster.health > 0:
             animate_text(f"Mummy's HP: {monster.health}", color='red', italic=True) 
-            animate_text("\nPress 'D' to attack the Monster!")
+            animate_text("\nPress 'D' to attack the Mummy!")
 
             user_attack1 = input("\033[92m \n   To Attack, press D: ")
 
@@ -281,7 +350,7 @@ while True :
 
             while monster.health > 0:
                 animate_text(f"Seropard's HP: {monster.health}", color='red', italic=True) 
-                animate_text("\nPress 'D' to attack the Monster!")
+                animate_text("\nPress 'D' to attack the Seropard!")
 
                 user_attack2 = input("\033[92m \n   To Attack, press D: ")
 
@@ -331,7 +400,7 @@ while True :
 
             
     else : 
-        animate_text("The passage to the east extends into the distance, leading to a well-lit room at its conclusion.")
+        animate_text("\nThe passage to the east extends into the distance, leading to a well-lit room at its conclusion.")
         animate_text("The room is adorned with faintly glowing torches, casting a warm illumination that contrasts with the dark corridors you've traversed so far. \nAs you step into the room, you notice two ornate chest boxes placed at its center, each emanating an air of mystique.")
         animate_text("The first chest, with a carefully crafted potion-like symbol in the middle, emits an air of alchemical elegance. \nThe craftsmanship suggests a certain mystique, hinting at the possibility of containing potent elixirs or mysterious potions. ")
         animate_text("Turning your attention to the second chest, you notice that this chest is quite plain compared to the first one.\nIt is adorned with simple carvings and doesn't give any clues about what kind of thing is stored inside.")
@@ -340,18 +409,18 @@ while True :
 
         if user_answer19 == 'a' or user_answer19 == "A" :
             animate_text("\nUpon opening the first chest, you uncovered a bottle of potion. \nDelicately removing the cork, you brought the potion to your lips, allowing the elixir to course through you. \nIn an instant, a refreshing wave revitalized your entire body. While savoring the effects, a resounding 'CRAAK' caught your attention, leading you to quickly turn toward the source of the noise. \nIt turned out that both chest boxes had instantaneously shattered into ash, which made the item inside the second chest box remain unknown forever.")
-            animate_text("   [Health +10] ", color= 'green', italic=True)
+            animate_text("\n   [Health +10] ", color= 'green', italic=True)
             user_list_of_item.append("Potion")
 
 
         else : 
             animate_text("\nUpon opening the second chest, you discover a meticulously crafted obsidian-colored bracelet adorned with intricate details. Carefully, you slid the bracelet onto your right arm. \nWhen you wear it, the obsidian bracelet seems to meld with your skin, forming peculiar runes that extend along your right forearm. \nA burning sensation engulfed your right arm, intensifying as if it were ablaze. \nFrantically attempting to remove it, you found that no matter your efforts, the bracelet refused to budge from your wrist.")
-            animate_text(" The searing discomfort persisted for a while before gradually subsiding, and the unease in your hand began to fade, returning the bracelet to its original form. \nIt appeared that this bracelet carried a curse.")
-            animate_text("Suddenly, a resounding 'CRAACK' caught your attention, leading you to quickly turn toward the source of the noise. \nIt turned out that both chest boxes had instantaneously shattered into ash, which made the item inside the first chest box remain unknown forever.")
+            animate_text("The searing discomfort persisted for a while before gradually subsiding, and the unease in your hand began to fade, returning the bracelet to its original form. \nIt appeared that this bracelet carried a curse.")
+            animate_text("\nSuddenly, a resounding 'CRAACK' caught your attention, leading you to quickly turn toward the source of the noise. \nIt turned out that both chest boxes had instantaneously shattered into ash, which made the item inside the first chest box remain unknown forever.")
             user_own_bracelet = True
             user_list_of_item.append("Cursed Bracelet")
 
-    animate_text("   ...   ")
+    animate_text("\n   ...   ")
     animate_text("\nAfter that, you exit the chamber and proceed forward. You continue to walk until you find a door, weathered by time and adorned with mystical symbols. \nWith a hesitant breath, you pushed it open and stepped into the room.")
     animate_text("Upon entering the chamber beyond the door, you encounter a creature resembling a seropard—a primal beast from ancient times, \nfeaturing the agile body of a leopard and the sinuous neck of a serpent. \nA sparkling jewel is nestled between its eyes, emitting a glow that adds to the surreal atmosphere.")
     animate_text("The seropard fixes its predatory gaze on you, emitting a low, guttural growl as it moves closer.")
@@ -359,13 +428,13 @@ while True :
 
     while monster.health > 0:
         animate_text(f"Seropard's HP: {monster.health}", color='red', italic=True) 
-        animate_text("\nPress 'D' to attack the Monster!")
+        animate_text("\nPress 'D' to attack the Seropard!")
         user_attack3 = input("\033[92m \n   To Attack, press D: ")
 
         if user_attack3 == 'D' or user_attack3 == 'd':
             damage = 10  # Assuming a fixed damage value for the player's attack
             monster.take_damage(damage)
-            animate_text(f"You attack the Seropard and deal {damage} damage!", color='red', italic=True)
+            animate_text(f"\nYou attack the Seropard and deal {damage} damage!", color='red', italic=True)
 
         else:
             animate_text("Invalid input. Press 'D' to attack.")
@@ -383,7 +452,7 @@ while True :
     animate_text("To your amazement, the ornate door begins to shift, and upon entering, you realize that you are not alone.")
 
 
-    #-----------------------Orang satu------------------------------------------------------------------------------------------------------------------------------------------------
+    #---------------------------------------------------------------Bagian Branden------------------------------------------------------------------------------------------------------------------
 
 
     animate_text("\nLeo, who had vanished earlier, is standing in front of a statue in the room.")
@@ -408,12 +477,12 @@ while True :
         animate_text("\nLeo shrugged his shoulders and chuckled, ")
         animate_text("\n   [Leo]: Actually, I've been searching for something, user_name.",color="blue", italic=True)
     else:
-        animate_text("\n You remained silent")
-        animate_text("\nYou decided to keep your question in your head, but it became evident that Leo noticed your intense gaze directed at him.")
-        animate_text("\nHe raised his eyebrow looking amused,")
+        animate_text("\nYou remained silent")
+        animate_text("You decided to keep your question in your head, but it became evident that Leo noticed your intense gaze directed at him.")
+        animate_text("He raised his eyebrow looking amused,")
         animate_text("\n   [Leo]: What's on your mind? ",color="blue", italic=True )
         animate_text("\nCaught red-handed, you became slightly flustered.")
-        animate_text("\n   [user_name]: It's just... I’m just wondering where you've been all this time. ")
+        animate_text("\n   [user_name]: It's just... I’m just wondering where you've been all this time. ", color='green', italic=True)
         animate_text("\nLeo looked and you and laughed, ")
         animate_text("\n   [Leo]: Actually, I've been searching for something, user_name.", color="blue", italic=True)
         
@@ -429,8 +498,100 @@ while True :
     animate_text("\nWow, he properly answered your answer again… This is starting to get weird.")
     animate_text("\nIn any case, you ponder whether the statue before them holds any relevance to the key or the artifact Leo is referring to, especially given how focused he gazes at it.") 
 
+    animate_text("\n\n.....\n\n")
 
-    #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    #-----------------------------------------------------Bagian Gerald----------------------------------------------------------------------------------------------------------------------------
+
+    animate_text("\n   [user_name] : Gaasp!", color='green',italic=True)
+    animate_text("\n   [Leo] : Ah, you’re awake?",color='blue', italic=True)
+    animate_text("\nYour head hurts like hell.")
+
+    animate_text("Instinctively, you attempted to soothe your throbbing headache by pressing your head, only to realize that you were bound and could feel the constraints.")
+
+    animate_text("You gaze upon what binds you—a peculiar rope crafted from an unusual material. It emits a vibrant glow that resonates with each of your movements.")
+
+    animate_text("Even though you felt like your head was about to explode, you could strongly feel that something was wrong.")
+
+    animate_text("\n   [Leo] : user_name", color='blue', italic=True)  
+
+    animate_text("You know who the owner of the voice is even if you’re not looking at him.")
+
+    animate_text("\n   [user_name] : Leo, What in the hell are you doing?", color='green', italic=True)
+
+    animate_text("\nLeo gave a crazed laugh in response.")
+    animate_text("\n   [Leo] : What do you think I’m doing?", color='blue', italic=True)
+
+    animate_text("You tried to be as calm as possible as you tried to analyze this whole situation.")
+
+    animate_text("First, it seems that you’re not in the room you were previously in. There’s no Seth’s statue to be seen; this whole room is empty.")
+
+    animate_text("The surface beneath you feels hard, perhaps it's a table. As you lay on your back, you can see the ceiling of this chamber.")
+
+    animate_text("\nSurprisingly, in contrast to the emptiness of the room, the platform is covered with murals.")
+
+    animate_text("The mural unfolds a haunting tableau, capturing a pivotal moment of ritualistic significance. At its core lies an intricately designed altar, with a man laid on it.")
+
+    animate_text("Central to the composition, a deity figure, regal and powerful, extends a hand that holds a blade. Its eyes, luminous and piercing, \nconvey a dual message of approval and expectation.")
+
+    animate_text("You immediately understand the meaning of the mural.")
+
+    animate_text("\nSacrifice.")
+
+    animate_text("\nAnd another revelation strikes upon you—the table you're lying on is not an ordinary table but the very same altar depicted in the mural.")
+
+    animate_text("You feel the blood draining from your face.")
+
+    animate_text("\n   [Leo] : It seems that you understand the situation now.", color='blue', italic=True)
+
+    animate_text("The air in the chamber becomes thick with tension as Leo's words hang in the air. \nYour gaze shifts from the mural to him, realizing the ominous correlation between the depicted sacrifice and the reality unfolding before you.")
+
+    animate_text("As the haze in your mind begins to clear, the realization solidifies – you are the sacrifice, lying on the very altar depicted in the mural.")
+
+    animate_text("Panic threatens to grip you, but you muster every ounce of composure to address Leo.")
+
+    animate_text("\n   [user_name] : What is this madness, Leo? Why am I here? What do you want?", color='green', italic=True)
+
+    animate_text("\nA cold, calculating smile plays on Leo's lips as he steps into the dim light. ")
+    animate_text("\n   [Leo] : You see user_name, this tomb holds an artifact of unimaginable power. But obtaining it requires a sacrifice.", color='blue', italic=True)
+
+    animate_text("\nLeo's expression morphs into a mixture of anticipation and satisfaction. ")
+    animate_text("\n   [Leo] : You're a smart person user_name, you must have guessed what you're here for", color='blue', italic=True)
+
+    animate_text("\nHis statements firmly establish that your assumptions are irrefutable. Leo truly is making you a living sacrifice.")
+    animate_text("Your eyes widen in disbelief and horror.")
+    animate_text("\n   [user_name] : You're f***ing crazy", color='green', italic=True)
+
+    animate_text("\n   [Leo] : I am indeed crazy, user_name", color='blue', italic=True)
+
+    animate_text("\nLeo's laughter echoes through the chamber, sending shivers down your spine. \nThe cold realization of being an integral part of a ritual to unlock an ancient power consumes you. \nAs fear and anger mingle within you, you rack your brain for a way out of this dire situation.")
+
+    animate_text("W\nith a composed exterior masking the storm within, you lock eyes with Leo.")
+    animate_text("\n   [user_name] : You can't seriously believe that sacrificing me will give you control over some ancient power. This is madness, and you're deluding yourself.", color='green', italic=True)
+
+    animate_text("\nLeo's gaze remains unwavering, his eyes gleaming with a disturbing intensity. ")
+    animate_text("\n   [Leo] : Oh, user_name, you underestimate the forces at play here. As I said before, this tomb is not just a burial ground; \nit's a conduit to something far beyond your comprehension. And you, user_name, are the key.", color='blue', italic=True)
+
+    animate_text("\nA surge of defiance courses through you.")
+    animate_text("I won't be part of your twisted rituals. You can't force me to—heuk", color='green', italic=True)
+
+    animate_text("\nBefore you can finish your sentence, Leo raises his hand, and suddenly, you sense the restraint on your body tightening, causing pain to radiate in the bound area.")
+
+    animate_text("\n   [Leo] : Now, now, user_name, resistance is futile. You will become my key even if you don’t want to.", color='blue', italic=True)
+
+    animate_text("As Leo utters those ominous words, he takes out a blade that is full of glowing runes, the very same blade that the statue of Seth had been holding.")
+
+    animate_text("Leo approaches you step by step, and as he gets closer and closer, the air crackles with an unsettling power, and the room dims as if absorbing the essence of your fear.")
+
+    animate_text("Desperation fuels your words as you scream, ")
+    animate_text("\n   [user_name] : There has to be another way, Leo. Do you believe meddling with forces beyond our understanding won't lead to consequences?", color='green', italic=True)
+
+    animate_text("Leo, however, remains unyielding.")
+    animate_text("\n   [Leo] : Consequences are for the weak. I seek power, and I will attain it at any cost. Embrace your role, user_name, \n      for you are about to become a part of something far greater than yourself.", color='blue', italic=True)
+
+
+
+
+    #-----------------------------------------------------Bagian Celine----------------------------------------------------------------------------------------------------------------------------
 
     if i in user_list_of_item:
         #ending 1
@@ -445,14 +606,14 @@ while True :
         animate_text("\n   [Leo] : R ■ ■t  w■l■ ■y de■r■ ■t ke■. ", color='blue', italic= True)
     else:
         #ending 2
-        animate_text("\nAs Leo advances with the menacing blade, an intense burning sensation erupts from your right arm, causing you to writhe in pain. \nThe burning sensation is similar to when you wore the cursed bracelet, but now, the burn is much worse. \nThe sudden agony is almost unbearable, and you choke back a scream.")
+        animate_text("\nAs Leo advances with the menacing blade towards you, an intense burning sensation erupts from your right arm, causing you to writhe in pain. \nThe burning sensation is similar to when you wore the cursed bracelet, but now, the burn is much worse. \nThe sudden agony is almost unbearable, and you choke back a scream.")
         animate_text("\nInstinctively, you glance at your right arm. \nThe cursed bracelet once again melted into your skin and has taken on the form of intricate runes, pulsing and shimmering with an otherworldly glow.")
         animate_text("\nLeo, momentarily startled, steps back as he witnesses the unexpected turn of events.")
-        animate_text("\n   [Leo] : [user_name]…? ", color='blue', italic= True)
+        animate_text("\n   [Leo] : user_name…? ", color='blue', italic= True)
         animate_text("\nThe restraints on your body inexplicably loosen. \nIt's as if the power coursing through the runes is affecting the constraints that held you captive.")
         animate_text("\nAmidst the torment, a surge of determination courses through you. \nIf the bracelet has fused with your very being, perhaps it grants you an unexpected advantage.")
         animate_text("\n   [user_name] :...I-It hurts…, my arm is hurting...", color='green', italic=True)
-        animate_text("\nLeo, who had stood back cautiously, advances toward you. \nWhen Cheungryo is close enough, you swiftly break free from your restraints and grab the blade in Leo's hands.")
+        animate_text("\nLeo, who had stood back cautiously, advances toward you. \nWhen Leo is close enough, you swiftly break free from your restraints and grab the blade in Leo's hands.")
         animate_text("\nAs your right hand comes into contact with the mystical blade, a surge of electricity replaces the burning sensation. \nThe clash between these two ancient artifacts results in the blade in Leo's hands being thrown.")
         animate_text("\nGathering every ounce of strength, you roll off the altar table in a swift and calculated move, catching Leo off guard. \nHis eyes widen in disbelief as he notices his weapon on the floor.")
         animate_text("\nSeeing the opportunity, you seize the restraining rope in your hands, summoning all your strength. \nYou approach Leo, who is reaching for his fallen weapon, and swiftly loop the rope around his neck.")
@@ -465,11 +626,12 @@ while True :
         animate_text("\nWith the dangerous and lunatic man now subdued, \nyou slowly navigate your way out through the secret passage of the tomb, \nleaving behind the shadows of peril and stepping into the uncertain light beyond.")
         user_monster_defeated.append('Leo')
 
+    #-------------------------------------------------Bagian Regine---------------------------------------------------------------------------------------------------------------------------------
     animate_text("\n\n======================================================================================================================================", color='green')
     animate_text("\nCongradulation user_name!!\nYou Have Finished '.....'\n\nThese are your Accomplishments!!\nHere are the monsters that you have defeated!")
-    animate_text(" ",user_monster_defeated)
+    print(" ",user_monster_defeated)
     animate_text("\n\nAnd these are the items that you had collected")
-    animate_text(" ",user_list_of_item)
+    print(" ",user_list_of_item)
 
     animate_text("\n\nThank You For Playing This Role Play Game That Was Created By \n   Branden Axton Aurelius\n   Celine Davina Masko\n   Gerald Julian Kemmanandro\n   Ivan Bunardi Junganda\n   Nirwasita Padmarini Putri R.\n   Regine Angelina Halim")
     animate_text("\n======================================================================================================================================", color='green')
