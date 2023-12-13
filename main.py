@@ -261,30 +261,29 @@ while True :
 
     animate_text("\n  The monstrous creature raises its enormous hand, preparing to strike you.", color='red', italic=True)
 
-    dodge = input("   Press 'D' to dodge : ")
+    while True : 
+        dodge = input("   Press 'D' to dodge : ")
 
-    if dodge == 'D' or dodge == 'd':
-        animate_text("\nYou successfully evade the attack, initiating a tense chase with the relentless monster.")
-        animate_text("\n   [Leo] : user_name!", color='blue', italic=True)
-        animate_text("\nYou turn your attention to the person calling you. ")
-        animate_text("\n   [Leo] : CATCH!!",color='blue', italic=True) 
-        animate_text("\nLeo shouts as he throws something in your direction.")
-        animate_text("\n  You react quickly, catching the item and examining it closely. It's a dagger, the same one Leo used to kill the Tomb Raiders earlier. \n  Traces of blood still adorn the gleaming blade. Now you have a weapon in your hand, you can attack the monster in front of you!", color='red', italic=True)
-        
-        catch = input("\n  Write 'Attack' to attack :  ")
-
-        if catch == 'Attack' or catch == 'attack':
-            user_monster_defeated.append('Monster')
-            animate_text("\nThe remnants of the defeated monster crumbled into dust, and a sigh of relief escaped your lips.")
-            animate_text("However, as the eerie silence settled in the tomb, a realization dawned upon you-Leo was nowhere to be seen.")
+        if dodge == 'D' or dodge == 'd':
+            animate_text("\nYou successfully evade the attack, initiating a tense chase with the relentless monster.")
+            animate_text("\n   [Leo] : user_name!", color='blue', italic=True)
+            animate_text("\nYou turn your attention to the person calling you. ")
+            animate_text("\n   [Leo] : CATCH!!",color='blue', italic=True) 
+            animate_text("\nLeo shouts as he throws something in your direction.")
+            animate_text("\n  You react quickly, catching the item and examining it closely. It's a dagger, the same one Leo used to kill the Tomb Raiders earlier. \n  Traces of blood still adorn the gleaming blade. Now you have a weapon in your hand, you can attack the monster in front of you!", color='red', italic=True)
+            while True :
+                catch = input("\n  Write 'Attack' to attack :  ")
+            
+                if catch == 'Attack' or catch == 'attack':
+                    user_monster_defeated.append('Monster')
+                    animate_text("\nThe remnants of the defeated monster crumbled into dust, and a sigh of relief escaped your lips.")
+                    animate_text("However, as the eerie silence settled in the tomb, a realization dawned upon you-Leo was nowhere to be seen.")
+                    break
+                else:
+                    animate_text("Invalid input. Write 'Attack' to attack.")
+            break
         else:
-            animate_text("\nYou hesitated and the monster seized the opportunity, striking you with its monstrous force.")
-            animate_text("Everything went dark...")
-            animate_text("\nYou Died", color='red')
-    else:
-        animate_text("\nYou failed to dodge in time, and the monstrous creature's hand struck you with overwhelming force.")
-        animate_text("Everything went dark...")
-        animate_text("\nYou Died", color='red')
+            animate_text("Invalid input.Press 'D' to dodge : ")
 
 
     #--------------------------------------------------------Bagian Regine-----------------------------------------------------------------------------------------------------------------------
